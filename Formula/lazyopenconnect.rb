@@ -5,21 +5,21 @@
 class Lazyopenconnect < Formula
   desc "TUI for managing OpenConnect VPN connections"
   homepage "https://github.com/Nybkox/lazyopenconnect"
-  version "0.4.0"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Nybkox/lazyopenconnect/releases/download/v0.4.0/lazyopenconnect_0.4.0_darwin_amd64.tar.gz"
-      sha256 "7c8f9c580cde394b4e565d6fef8d934a692a175789b7ae3dab48a2b2d9f8df54"
+      url "https://github.com/Nybkox/lazyopenconnect/releases/download/v0.5.0/lazyopenconnect_0.5.0_darwin_amd64.tar.gz"
+      sha256 "1dba388f83f8728c8bc2e9bd60f587cc0cae914c558e67921e7d5fa8e84b3e65"
 
       def install
         bin.install "lazyopenconnect"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Nybkox/lazyopenconnect/releases/download/v0.4.0/lazyopenconnect_0.4.0_darwin_arm64.tar.gz"
-      sha256 "db785222de85189f582dfde8c5690e7664e55943b3b599bc91d3082cb337b85b"
+      url "https://github.com/Nybkox/lazyopenconnect/releases/download/v0.5.0/lazyopenconnect_0.5.0_darwin_arm64.tar.gz"
+      sha256 "1a7a3ea96ad7ebed8eb6467fcfaf104fc12ed724ce30bb3943a8f19379cabe27"
 
       def install
         bin.install "lazyopenconnect"
@@ -29,15 +29,15 @@ class Lazyopenconnect < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Nybkox/lazyopenconnect/releases/download/v0.4.0/lazyopenconnect_0.4.0_linux_amd64.tar.gz"
-      sha256 "60d822d60b3b11c66ee27b0c85c7c8da1c38cc96de50498b0e3ae2067d95bde9"
+      url "https://github.com/Nybkox/lazyopenconnect/releases/download/v0.5.0/lazyopenconnect_0.5.0_linux_amd64.tar.gz"
+      sha256 "3811ff9ff5781bdfda794790c5b0edd7f698c77818c8f97b7d559eb622b7011a"
       def install
         bin.install "lazyopenconnect"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Nybkox/lazyopenconnect/releases/download/v0.4.0/lazyopenconnect_0.4.0_linux_arm64.tar.gz"
-      sha256 "bfab55aafa5fde8bfaa36dc0a32e5bd79bd3c1f05677fc022be1d43e08c9199e"
+      url "https://github.com/Nybkox/lazyopenconnect/releases/download/v0.5.0/lazyopenconnect_0.5.0_linux_arm64.tar.gz"
+      sha256 "ff2e74570f14e43a40826c4806959d3e7c06a28a101b359b7e0be9f6284a99ef"
       def install
         bin.install "lazyopenconnect"
       end
